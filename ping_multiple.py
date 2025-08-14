@@ -17,4 +17,4 @@ for octet in range(254):
     exit_code = os.system(ping_cmd)
     # if host is up print the ip address
     if exit_code == 0:
-        print(ip)
+        print(f"Host up: {ip} ")
