@@ -7,7 +7,7 @@ for ($octet = 1; $octet -le 254; $octet++) {
 
     # Choose ping command based on OS
     if ($osPlatform -eq "Win32NT") {
-        $ping_output = ping -n 1 -w 1000 $ip
+        $ping_output = ping -n 1 -w 1 $ip
         $host_up = $ping_output -match "Reply from"
     }
     elseif ($osPlatform -eq "Unix" -or $osPlatform -eq "MacOSX") {
